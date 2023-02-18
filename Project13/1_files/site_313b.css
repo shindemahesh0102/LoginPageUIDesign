@@ -1,0 +1,876 @@
+
+/*
+==================================================
+==================================================
+
+* Entity V1.0.1 (hotfix)
+* Shannon Brown
+* 11/22/2019
+
+==================================================
+==================================================
+*/
+
+
+
+/* 
+==================================================
+Table of Contents
+==================================================
+  Base Grid
+    Tablet (Portrait)
+    Mobile (Portrait)
+    Mobile (Landscape)
+    Small Screens
+    Clearing
+  Resets & Fixes
+	Basic Styles
+	Typography
+	Links
+	Lists
+	Images
+	Buttons
+  Header
+  Progress Bar
+	Forms
+    Address Fields
+    Other Fill-In
+    Demographics
+    Newsletters & Deployments
+    Standard Fields
+    Controls
+  Validation
+	Misc 
+*/
+
+
+
+/* 
+Base Grid
+==================================================
+*/
+
+  .container                                  { width: 100%; box-sizing: border-box; margin: 0 auto; padding: 0 20%; }
+  .container .column,
+  .container .columns                         { display: inline-block; box-sizing: border-box; padding-left: 20px; padding-right: 20px; }
+  .row                                        { margin-bottom: 0px; }
+  /* Nested Column Classes */
+  .column.alpha, .columns.alpha               { padding-left: 0; }
+  .column.omega, .columns.omega               { padding-right: 0; }
+  /* Base Grid */
+  .container .eight.columns                   { width: 50%; }
+  .container .sixteen.columns                 { width: 100%; }
+
+  .container .one-third.column                { width: 33.3333%; }
+  .container .two-thirds.column               { width: 66.6666%; }
+
+
+/* Small Desktop */
+
+  @media only screen and (min-width: 980px) and (max-width: 1279px) {
+    .container                                { padding: 0 15%; }
+    .container .column,
+    .container .columns                       { padding-left: 15px; padding-right: 15px; }
+  }
+
+
+/* Tablet (Portrait) */
+
+  @media only screen and (min-width: 768px) and (max-width: 959px) {
+    .container                                { padding: 0 10%; }
+    .container .column,
+    .container .columns                       { padding-left: 10px; padding-right: 10px; }
+  }
+
+
+/*  Mobile (Portrait) */
+
+  @media only screen and (max-width: 767px) {
+    .container                                { padding: 0 8%; }
+    .container .column,
+    .container .columns                       { padding-left: 8px; padding-right: 8px; }
+  }
+
+
+/* Mobile (Landscape) */
+  
+  @media only screen and (min-width: 480px) and (max-width: 767px) {
+    .container                                { padding: 0 5%; }
+    .container .column,
+    .container .columns                       { padding-left: 5px; padding-right: 5px; }
+  }
+
+
+/* Small Screens */
+  
+  @media only screen and (max-width: 480px) {
+    .container                                { padding: 0 5%; }
+    .container .column,
+    .container .columns                       { padding-left: 2px; padding-right: 2px; }
+  }
+
+
+/* Clearing */
+
+    /* Self Clearing Goodness */
+    .container:after { content: "\0020"; display: block; height: 0; clear: both; visibility: hidden; }
+
+    /* Use clearfix class on parent to clear nested columns,
+    or wrap each row of columns in a <div class="row"> */
+    .clearfix:before,
+    .clearfix:after,
+    .row:before,
+    .row:after {
+      content: '\0020';
+      display: block;
+      overflow: hidden;
+      visibility: hidden;
+      width: 0;
+      height: 0; }
+    .row:after,
+    .clearfix:after {
+      clear: both; }
+    .row,
+    .clearfix {
+      zoom: 1; }
+
+    /* You can also use a <br class="clear" /> to clear columns */
+    .clear {
+      clear: both;
+      display: block;
+      overflow: hidden;
+      visibility: hidden;
+      width: 0;
+      height: 0;
+    }
+ 
+ 
+ 
+ /* 
+ Reset & Fixes
+==================================================
+*/
+
+  html {
+    margin-right: calc(100vw - 100%);	/* fix for scrollbar jump */
+  }
+  html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary, time, mark, audio, video {
+		margin: 0;
+		padding: 0;
+		border: 0;
+		font-size: 100%;
+		font: inherit;
+		vertical-align: baseline;
+  }
+	article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section {
+		display: block;
+  }
+	body {
+		line-height: 1;
+  }
+	ol, ul {
+		list-style: none;
+  }
+	blockquote, q {
+		quotes: none;
+  }
+	blockquote:before, blockquote:after,
+	q:before, q:after {
+		content: '';
+		content: none;
+  }
+	table {
+		border-collapse: collapse;
+		border-spacing: 0;
+  }
+	input {
+		clear: both;
+  }
+  /* fix for conditionally displayed inline-block item */
+  div[id^="disp"][style="display: block;"],
+  div[id^="disp"][style=""]  {
+    display: inline !important;
+  }
+  /* advanced checkbox hack */
+  body { 
+    -webkit-animation: bugfix infinite 1s; 
+  }
+  
+  @-webkit-keyframes bugfix { 
+    from { padding: 0; } 
+    to { padding: 0; } 
+  }
+ 
+ 
+ 
+/* 
+Basic Styles
+================================================== 
+*/
+
+	body {
+		background: #fff;
+		font: 14px/21px "HelveticaNeue", "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-weight: 400;
+		color: #444;
+		-webkit-font-smoothing: antialiased; /* Fix for webkit rendering */
+		-webkit-text-size-adjust: 100%;
+  }
+ 
+
+
+/*
+Typography
+================================================== 
+*/
+
+  h1, h2, h3, h4, h5, h6 {
+    font-weight: 300;
+    margin: 1.25em 0 .75em 0;
+  }
+
+  @media only screen and (max-width: 767px) {
+    h1, h2, h3, h4, h5, h6 {
+      margin: .75em 0;
+    }
+  }
+  
+  h1 a, h2 a, h3 a, h4 a, h5 a, h6 a { font-weight: inherit; }
+  h1 { font-size: 46px; line-height: 50px; }
+  h2 { font-size: 35px; line-height: 40px; }
+  h3 { font-size: 28px; line-height: 34px; }
+  h4 { font-size: 21px; line-height: 30px; }
+  h5 { font-size: 17px; line-height: 24px; }
+  h6 { font-size: 14px; line-height: 21px; }
+  .subheader { color: #777; }
+
+  p { margin: 0 0 20px 0; }
+  p img { margin: 0; }
+  p.lead { font-size: 21px; line-height: 27px; color: #777;  }
+
+  em { font-style: italic; }
+  strong { font-weight: 600; color: #333; }
+  small { font-size: 80%; }
+  sup { font-size: .5em; vertical-align: super; }
+
+  /*	Blockquotes  */
+  blockquote, blockquote p { font-size: 17px; line-height: 24px; color: #777; font-style: italic; }
+  blockquote { margin: 0 0 20px; padding: 9px 20px 0 19px; border-left: 1px solid #ddd; }
+  blockquote cite { display: block; font-size: 12px; color: #555; }
+  blockquote cite:before { content: "\2014 \0020"; }
+  blockquote cite a, blockquote cite a:visited, blockquote cite a:visited { color: #555; }
+
+  hr { height: 2px; border-width: 0; color: #444; background-color: #444; clear: both; margin: 20px 10px; }
+
+
+
+/*
+Links
+==================================================
+*/
+
+	a, a:visited { color: #333; text-decoration: underline; outline: 0; }
+	a:hover, a:focus { color: #000; }
+	p a, p a:visited { line-height: inherit; }
+
+
+
+/*
+Lists
+==================================================
+*/
+
+	ul, ol { margin-bottom: 20px; }
+	ul { list-style: none outside; }
+	ol { list-style: decimal; }
+	ol, ul.square, ul.circle, ul.disc { margin-left: 30px; }
+	ul.square { list-style: square outside; }
+	ul.circle { list-style: circle outside; }
+	ul.disc { list-style: disc outside; }
+	ul ul, ul ol,
+	ol ol, ol ul { margin: 4px 0 5px 36px; font-size: 90%;  }
+	ul ul li, ul ol li,
+	ol ol li, ol ul li { margin-bottom: 6px; }
+	li { line-height: 18px; }
+	ul.large li { line-height: 21px; }
+	li p { line-height: 21px; }
+
+
+
+/*
+Images
+================================================== 
+*/
+
+	img.scale-with-grid {
+		max-width: 100%;
+		height: auto; 
+  }
+
+
+
+/*
+Buttons
+================================================== 
+*/
+
+  button,
+  input[type="submit"],
+  input[type="reset"],
+  input[type="button"] {
+    background: #13497a;
+    border: 0px;
+    border-radius: 3px;
+    color: #FFFFFF;
+    display: inline-block;
+    font-family: Helvetica, Arial, sans-serif;
+    font-size: 14px;
+    font-weight: bold;
+    line-height: normal;
+    text-decoration: none;
+    cursor: pointer;
+    margin: 20px 10px;
+    padding: 15px 30px;
+    transition: all .25s;
+  }
+
+  button:hover,
+  input[type="submit"]:hover,
+  input[type="reset"]:hover,
+  input[type="button"]:hover {
+    background: #4c8ec9;
+    color: #fff;
+    transition: all .25s;
+  }
+
+  button.full-width,
+  input[type="submit"].full-width,
+  input[type="reset"].full-width,
+  input[type="button"].full-width {
+    width: 100%;
+    padding-left: 0 !important;
+    padding-right: 0 !important;
+    text-align: center; 
+  }
+  
+  /* Fix for odd Mozilla border & padding issues */
+  button::-moz-focus-inner,
+  input::-moz-focus-inner {
+    border: 0;
+    padding: 0;
+  }
+
+
+
+/*
+Header
+================================================== 
+*/
+
+  .container header.columns , .container header.column  {
+    text-align: center;
+  }
+  
+  .container header.columns img, .container header.column img  {
+    max-width: 100%;
+  }
+
+
+
+/*
+Progress Bar
+================================================== 
+*/
+
+  .progressbar {
+    counter-reset: step;
+    margin-top: 20px;
+    text-align: center;
+  }
+
+  .progressbar ul {
+    display: inline-block;
+  }
+
+  .progressbar li {
+    list-style-type: none;
+    font-size: 8px;
+    text-transform: uppercase;
+    text-align: left;
+    vertical-align: top;
+    color: #999999;
+  }
+
+  .progressbar li:before {
+    width: 1em;
+    margin-right: 1em;
+    content: counter(step);
+    counter-increment: step;
+  }
+
+  .progressbar li:before {
+    width: 20px;
+    height: 20px;
+    content: counter(step);
+    counter-increment: step;
+    line-height: 20px;
+    border: 2px solid #999999;
+    display: inline-block;
+    text-align: center;
+    margin: 10px 10px auto 10px;
+    border-radius: 50%;
+    background-color: white;
+  }
+
+  .progressbar li.done:before {
+    content: "\2713";
+    color: #FFFFFF;
+    background-color: #8bc435;
+  }
+
+  .progressbar li.active:before,
+  .progressbar li.done:before {
+    border-color: #8bc435;
+  }
+
+  .progressbar li.active,
+  .progressbar li.done {
+    color: #8bc435;
+  }
+
+  .progressbar li.done:before {
+    content: "\2713";
+  }
+
+  @media only screen and (min-width: 480px) {
+
+    .progressbar ul {
+      display: block;
+      text-align: center;
+    }
+
+    .progressbar li {
+      width: 20%;
+      display: inline-block;
+      text-align: center;
+      position: relative;
+      color: #999999;
+    }
+
+    .progressbar li:after {
+      width: 100%;
+      height: 2px;
+      content: '';
+      position: absolute;
+      background-color: #999999;
+      top: 11px;
+      left: -50%;
+      z-index: -1;
+    }
+
+    .progressbar li:first-child:after {
+      content: none;
+    }
+    
+    .progressbar li:before {
+      display: block;
+      margin: 0px auto 0px auto;
+    }
+
+    .progressbar li.active + li:after {
+      background-color: #999999;
+    }
+    
+    .progressbar li.done + li:after {
+      background-color: #8bc435;
+    }
+  
+  }
+
+
+
+/*
+Forms
+================================================== 
+*/
+
+	fieldset { margin-bottom: 20px; }
+	input[type="text"],
+	input[type="password"],
+	input[type="email"],
+	textarea,
+	select {
+    box-sizing: border-box;
+		border: 1px solid #ccc;
+		padding: 6px 4px;
+		outline: none;
+		-moz-border-radius: 2px;
+		-webkit-border-radius: 2px;
+		border-radius: 2px;
+		font: 13px;
+		color: #777;
+		margin: 0;
+		display: block;
+		background: #fff; 
+  }
+  
+	input[type="text"]:focus,
+	input[type="password"]:focus,
+	input[type="email"]:focus,
+	textarea:focus {
+		border: 1px solid #aaa;
+ 		color: #444;
+ 		-moz-box-shadow: 1px 1px 1px rgba(0,0,0,.1); 
+		-webkit-box-shadow: 1px 1px 1px rgba(0,0,0,.1); 
+		box-shadow: 1px 1px 1px rgba(0,0,0,.1);
+  }
+  
+	textarea { min-height: 60px; }
+	/* label, */
+	legend {
+		display: block;
+		font-weight: bold;
+		font-size: 13px;  
+  }
+  
+	select {
+		width: 100%;
+    padding: 5px 4px; 
+  }
+  
+	input[type="text"] {
+		width: 100%;
+  }	
+  
+	input[type="checkbox"], input[type="radio"] {
+		display: inline;
+  }
+  
+  ::placeholder {
+    opacity: 1;
+  }
+  
+	label span,
+	legend span {
+		font-weight: normal;
+		font-size: 13px;
+		color: #444; 
+  }
+	.questionlabel {
+		width: 100%;
+		display: block;
+  }
+
+  @media screen and (min-width: 768px) {
+    input[type="text"], select {
+      width: 66.666%;
+    }
+  }
+
+
+/* Address Fields */
+
+  .addresslabel {
+    margin-bottom: 0px;
+    width: 100%;
+    box-sizing: border-box;
+    display: block;
+    vertical-align: top;
+  }
+
+  @media only screen and (min-width: 1280px) {
+    .addresslabel {
+      width: 50%;
+      display: inline-block;
+      padding: 12px 28px;
+    }
+  }
+
+  @media only screen and (min-width: 960px) and (max-width: 1279px) {
+    .addresslabel {
+      width: 50%;
+      display: inline-block;
+      padding: 12px 24px;
+    }
+  }
+
+  @media only screen and (min-width: 768px) and (max-width: 959px) {
+    .addresslabel {
+      width: 50%;
+      display: inline-block;
+      padding: 8px 18px;
+    }
+  }
+
+  @media only screen and (min-width: 480px) and (max-width: 767px) {
+    .addresslabel {
+      width: 50%;
+      display: inline-block;
+      padding: 8px 12px;
+    }
+  }
+
+  @media only screen and (max-width: 479px) {
+    .addresslabel {
+      width: 100%;
+      display: inline-block;
+      padding: 8px 2px;
+    }
+  }
+
+	.addresslabel .questionlabel {
+    font-size: .8em;
+    line-height: 1;
+    margin-bottom: 3px;
+		clear: both;
+		display: inline-block;
+		width: 94%;
+		font-weight: 400;
+    color: #444;
+    transition: color .5s;
+  }
+
+	.addresslabel:focus-within .questionlabel {
+    color: #444;
+    transition: color .5s;
+  }
+
+	.addresslabel input,
+  .addresslabel select,
+	.addresslabel input[type="text"],
+	.addresslabel input[type="password"],
+	.addresslabel input[type="email"] {
+		width: 100%;
+		margin-left: 0px; 
+  }
+
+
+/* Demographics */
+
+
+/* Other Fill-In */
+
+  .otherfillin {
+    display: inline-block;
+    max-width: 40%;
+  }
+
+  .otherfillin input {
+    border-top: 0px;
+    border-left: 0px;
+    border-right: 0px;
+    border-radius: 0px;
+    margin-left: 8px;
+    padding: 0px;
+    margin-bottom: 0px;
+    border-bottom-style: dashed;
+    border-color: #999;
+  }
+
+  .otherfillin input:focus {
+    border-top: 0px;
+    border-left: 0px;
+    border-right: 0px;
+    box-shadow: none;
+    border-bottom-style: dashed;
+    border-color: #666;
+  }
+
+
+/* Newsletters & Deployments */
+
+  div[id*="pd"],
+  div[id*="pp"] {
+    margin-top: 1.25em;
+  }
+
+  div[id*="pd"]>input[id*="optd"],
+  div[id*="pp"]>input[id*="optp"] {
+    display: inline-block;
+    margin-left: 0px;
+    margin-right: 8px;
+    margin-top: 4px;
+    vertical-align: top;
+  }
+
+  div[id*="pd"] .questionlabel,
+  div[id*="pp"] .questionlabel {
+    display: inline-block;
+    width: 86%;
+  }
+
+
+/* Controls */
+
+  div.button { text-align: right; }
+  #submitbtn.submit { clear:both; text-align: right; }
+
+
+
+/*
+Validation
+================================================== 
+*/
+
+
+  .highlight,
+  .questionlabel.highlight { /* change invalid questionlabel color */
+    color: #994444;
+  }
+
+  font[color="red"] { /* change red asterisk color */
+    color: #994444;
+  }
+
+  div.validation h4 {
+    width: 100%;
+    text-align: center;
+    margin-top: 0px;
+    line-height: 1;
+    border-bottom: 1px solid #fff;
+    cursor: default;
+  }
+
+  div.validation:not(.min) {
+    position: fixed;
+    min-width: 280px;
+    background-color: #994444;
+    color: #fff;
+    border-radius: 8px;
+    position: fixed;
+    bottom: 50%;
+    left: 50%;
+    padding: 40px;
+    box-sizing: border-box;
+    transform: translateX(-50%) translateY(50%);
+    box-shadow: 3px 3px 2px rgba(0,0,0,.2);
+    transition: all .25s ease-in-out;
+  }
+
+  div.validation:not(.min) ul {
+    max-height: 320px;
+    max-width: 320px;
+    overflow-y: auto;
+    overflow-x: hidden;
+  }
+
+  div.validation:not(.min) ul:after {
+    content: "- Click to minimize -";
+    font-size: .8em;
+    font-weight: 900;
+    text-transform: uppercase;
+    position: absolute;
+    bottom: .5em;
+    left: 50%;
+    transform: translateX(-50%);
+    opacity: .6;
+  }
+
+  div.validation.min h4 {
+    margin-bottom: 0px;
+    font-size: 16px;
+    font-weight: 400;
+    border-bottom: none;
+  }
+
+  div.validation.min {
+    max-height: 60px;
+    max-width: 240px;
+    min-height: 20px;
+    min-width: 120px;
+    background-color: #994444;
+    color: #fff;
+    border-top-left-radius: 8px;
+    border-top-right-radius: 8px;
+    position: fixed;
+    bottom: 0px;
+    left: 0px;
+    padding: 8px 40px;
+    box-sizing: border-box;
+    transition: all .25s ease-in-out;
+  }
+
+  div.validation.min ul {
+    display: none;
+  }
+
+  div.validation.min ul:after {
+    display: none;
+  }
+
+  @media only screen and (max-width: 479px) {
+    div.validation:not(.min) {
+      width: 100%;
+      height: 100%;
+      border-radius: 0px;
+    }
+  }
+
+  @media only screen and (max-height: 320px) {
+    
+    div.validation:not(.min) ul {
+      max-height: 8em;
+    }
+  }
+
+  @media only screen and (max-height: 280px) {
+    
+    div.validation:not(.min) ul {
+      max-height: 5em;
+    }
+  }
+
+  @media only screen and (max-height: 180px) {
+
+    div.validation:not(.min) {
+      width: 100%;
+      height: 100%;
+      border-radius: 0px;
+      padding: 30px;
+    }
+    
+    div.validation:not(.min) ul {
+      max-height: 4em;
+    }
+  }
+
+  @media only screen and (max-height: 150px) {
+
+    div.validation:not(.min) {
+      padding: 20px;
+    }
+    
+    div.validation:not(.min) ul {
+      max-height: 2.5em;
+    }
+  }
+
+  @media only screen and (max-height: 150px) and (min-width: 480px) {
+
+    div.validation:not(.min) {
+      padding: 20px;
+    }
+    
+    div.validation:not(.min) ul {
+      max-width: none;
+      width: 100%;
+    }
+    
+    div.validation:not(.min) ul li {
+      display: inline-block;
+      min-width: 33.333%;
+    }
+  }
+
+
+
+/*
+Misc
+================================================== 
+*/
+
+	.remove-bottom { margin-bottom: 0 !important; }
+	.half-bottom { margin-bottom: 10px !important; }
+	.add-bottom { margin-bottom: 20px !important; }
+
+

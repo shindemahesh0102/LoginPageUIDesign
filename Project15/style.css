@@ -1,0 +1,215 @@
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+.outer {
+    display: flex;
+    height: 800px;
+    width: 865px;
+
+    /* background-image: linear-gradient(270deg, #f0c2d1 0%, #98f3ef 100%); */
+  
+    padding: 50px;
+    margin: 80px  auto;
+    align-items: center;
+    justify-content: center;
+    background-image: url(/images/image15.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+
+}
+
+.left {
+ 
+    height: 700px;
+    width: 45%;
+
+    margin: auto;
+    padding: 40px;
+    border-radius: 25px;
+    padding-top: 90px;
+    background-image: url(/images/image15.jpg);
+    background-repeat: no-repeat; 
+    background-size: cover;
+
+   
+    box-shadow: inset 1px 2px 2px 4px rgba(169, 162, 162, 0.482);
+    text-align: center;
+    padding: 40px;
+   
+  
+   
+    
+}
+/* top text */
+.topt{
+    height: 20px;
+    width: 500px;
+    margin-top: 2px;
+    text-align: center;
+    margin-left: -102px;
+    color: white;
+    padding-bottom: 84px;
+ 
+}
+
+h3{
+    height: 10px;
+    font-size: xx-large;
+    font-size: 55px;
+    margin-top: 3px;
+    color: white;
+   padding-bottom: 62px;
+   font-family: sans-serif;
+  
+}
+/* input box and rember and sign in */
+.ltext{
+    margin-top: 43px;
+}
+
+
+
+
+/* padding or */
+h4 {
+    display: flex;
+    flex-direction: row;
+margin-left: 34px;
+}
+
+
+/* user */
+.img1{
+    position: absolute;
+    height: 20px;
+    width: 20px;
+    padding-top: 3px; 
+    margin-left: 16px;
+    margin-top: 7px;
+}
+.link{
+       margin-left: 90px;
+       
+}
+.one{
+    text-decoration: none;
+}
+
+
+h4{
+    color: white;
+    font-size: 30px;
+}
+
+
+
+.right {
+    height: 700px;
+    width: 45%;
+  
+    background-image: linear-gradient(270deg, #FFDEE9 0%, #B5FFFC 100%);
+    margin: auto;
+    padding: 40px;
+    padding-top: 55px;
+    border-radius: 25px;
+    background-image: url(/images/image15.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    
+    box-shadow: inset 1px 2px 2px 4px rgba(169, 162, 162, 0.482);
+    text-align: center;
+ 
+
+
+}
+
+/* ______________________________ */
+
+/* right side css */
+
+input {
+    height: 40px;
+    width: 100%;
+    padding-left: 50px;
+    border-radius: 25px;
+    border: none;
+
+
+}
+
+
+.btn2{
+  
+    border: none;
+    color:white ;
+    margin-left: -253px;
+    font-size: 23px;
+    background: none;
+   
+
+
+    
+   
+}
+.btn1 {
+    background-color: rgb(65, 36, 93);
+    color: aliceblue;
+    padding: none;
+    border-radius: 9px;
+    height: 24px;
+    width: 25px;
+    border: none;
+    font-family: serif;
+    background-image: url(/images/image15.jpg);
+    background-repeat: no-repeat;
+    background-size:cover;
+
+
+}
+.btm1{
+    color: white;
+    margin-left: 115px;
+    height: 26px;
+    font-size: 24px;
+    font-family: sans-serif;
+    font-weight: lighter;
+    
+}
+
+.bottom {
+
+    margin-top: 90px;
+    text-align: center;
+    color: white;
+}
+
+.bottom1 {
+
+    margin-top: 192px;
+    text-align: center;
+}
+/* bottom icon */
+.btmr{
+    margin-top: 5px;
+    margin-left: 84px;
+  
+height: 40px;
+width: 109px;
+display: flex;
+justify-content: space-between;
+
+}
+button{
+    height: 30px;
+    width: 30px;
+    border-radius: 50%;
+    background-color: #192626;
+    color: rgb(74, 74, 182);
+    
+}
+a{
+    color: white;
+}

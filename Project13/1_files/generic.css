@@ -1,0 +1,115 @@
+/* 		1. Multi-tiered Responses
+================================================== */
+.tier1 {  }
+.tier2 { margin-left: 50px; }
+.tier3 { margin-left: 100px; }
+
+/* 		2. Auto-Lookup Scrim
+================================================== */
+
+.scrim {
+	position: absolute;
+	z-index: 17;
+	top:0;
+	right:0;
+	bottom:0;
+	left:0;
+	min-height: 60px;
+	line-height: 60px;
+	background-color: #fff;
+	opacity: 0.50;
+	filter: alpha(opacity=50);
+	overflow: hidden;
+}
+.scrim > [class*="icon-"] {
+	position: absolute;
+	top: 25%;
+	left: 0;
+	right: 0;
+	text-align: center;
+}
+
+.scrim > .icon-spin {
+	-moz-animation-duration: 1.2s;
+	-webkit-animation-duration: 1.2s;
+	-o-animation-duration: 1.2s;
+	-ms-animation-duration: 1.2s;
+	animation-duration: 1.2s;
+}
+
+/* credit card expire date */
+#p32.addresslabel {
+    padding-left: 12px;
+    /*display: inline-block;*/
+    display: table-cell;
+}
+#p32.addresslabel .questionlabel {
+    font-family: arial, helvetica, sans-serif;
+    font-size: 12.0px;
+    font-weight: normal;
+    float: none;
+}
+
+select[id*='month'], select[id*='year'] {
+    width: 85px;
+    float: left;
+    margin-right: 10px;
+}
+
+/* name on card */
+#p127.addresslabel {
+    padding-left: 12px;
+}
+#p127.addresslabel .questionlabel {
+    font-family: arial, helvetica, sans-serif;
+    font-size: 12.0px;
+    font-weight: normal;
+    float: none;
+}
+
+/*      3. Demographics
+================================================== */
+.column2 {
+    width: 50%;
+    vertical-align: top;
+    display: inline-block;
+}
+
+.column3 {
+    width: 33%;
+    vertical-align: top;
+    display: inline-block;
+}
+
+/*      4. Other features
+================================================== */
+#freshaddressmessage {
+    color: red;
+}
+.payment_method_warning {
+    color: red;
+}
+/*      5. Simple Modal
+================================================== */
+/* The Modal (background) */
+.simple_modal {
+  display: none; /* Hidden by default */
+  position: fixed; /* Stay in place */
+  z-index: 1201; /* Sit on top */
+  left: 0;
+  top: 0;
+  width: 100%; /* Full width */
+  height: 100%; /* Full height */
+  overflow: auto; /* Enable scroll if needed */
+  background-color: rgb(0,0,0); /* Fallback color */
+  background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+}
+
+/* Modal Content/Box */
+.simple_modal_content {
+  background-color: #fefefe;
+  margin: 15% auto; /* 15% from the top and centered */
+  padding: 20px;
+  border: 1px solid #888;
+  width: 50%; /* Could be more or less, depending on screen size */
+}

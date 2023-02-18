@@ -1,0 +1,195 @@
+*{
+    padding: 0px;
+    margin: 0px;
+
+    box-sizing: border-box;
+
+}
+
+.outer{
+    background-color: rgb(246, 243, 243);
+    height: 470px;
+    width: 270px;
+    margin:auto;
+    padding: 10px;
+
+
+
+}
+.inner{
+/*     
+    background-color: rgb(15, 15, 139); */
+    height: 450px;
+    width: 250px;
+    /* padding: 8px; */
+    margin:  auto;
+    border-radius: 10px;
+    background-image: url(/images/PUBG\ PC\ _\ Free\ Download\ _\ Wallhack\ -\ Aimbot\ -\ Speed\ Hack.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    /* box-shadow: inset 0 0 5px 2px #282a2d; mark the inset */
+    box-shadow:0px 0px 20px 10px rgba(0,0,0,0.6) ;
+
+}
+
+.top{
+    display: flex;
+    color: white;
+    justify-content: space-evenly;
+    padding-top: 1px;
+}
+
+
+/* .dot {
+    height: 4px;
+    width: 4px;
+    background-color: #bbb;
+    border-radius: 50%;
+    display: flex;
+    margin-top: 5px;
+  justify-content: end;
+
+    
+  } */
+  .img1{
+    height: 50px;
+    width: 50px;
+  
+   margin-left:-30px ;
+   margin-top: -15px;
+   
+
+  }
+  .ca{
+    position: relative;
+right: 28px;
+
+  }
+  .time{
+     position: relative;
+    right: 38px;
+
+  }
+  .fa-fa-circle{
+    height: 10px;
+    width: 1px;
+  }
+  .fa-battery-three-quarters{
+    position: relative;
+    left: 10px;
+   
+
+   
+  }
+  
+
+.middle{
+
+    /* background-color: aqua; */
+    height: 250px;
+    width: 250px;
+    padding: 20px;
+    margin-top: 50px;
+}
+
+h3{
+    color: white;
+    height: 10px;
+    text-align: center;
+    font-size: 14px;
+    margin-top: -30px;
+    font-family:'Times New Roman', Times, serif;
+    font-size: small;
+   
+}
+
+img{
+    height: 20px;
+    width: 20px;
+ 
+    
+ 
+    
+}
+
+input{
+  
+   padding-left: 28px;
+   border-radius: 20px;
+   height: 35px;
+   width: 100%;
+   /* background: none; */
+
+   border-color: #edf5e5;
+   box-shadow: 10px;
+   /* background-color: #313a27 ; */
+   opacity: 40px;
+   background: none;
+
+   /* border: none; */
+
+
+   
+}
+
+.us{
+    height: 20px;
+    width: 30px;
+   padding-left: 10px;
+   margin-left: 10px;
+
+   
+}
+.icon {
+    position:relative;
+    height: 18px;
+    width: 18px;
+
+    padding-left: 4px;
+ 
+   margin-top: 34px; 
+   margin-left: 8px;
+   /* filter: bulescale(100%); */
+   filter:bule-rotate(90deg);
+  
+
+
+
+  
+   
+}
+
+
+
+
+.user , .email,.pass {
+    display: flex;
+    height: 25px;
+    width: 100%;
+    
+    background-size: cover;
+
+}
+.btn{
+    height: 35px;
+    width: 100%;
+    text-align: center;
+    color: rgb(211, 223, 223);
+    background-color: rgb(102, 201, 232);
+    padding-right: 28px;
+}
+
+::placeholder{
+color: white;
+
+}
+a{
+   
+    text-decoration: none;
+
+    color: rgb(199, 190, 190);
+   
+}
+.end{
+   text-align: center;
+}

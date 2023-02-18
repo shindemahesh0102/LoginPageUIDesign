@@ -1,0 +1,1 @@
+import{_ as r,o,c as s,h as t}from"./bootstrap-5b74a21d.mjs";const _={},a={class:"ebm-idx-form-field"};function c(e,n){return o(),s("div",a,[t(e.$slots,"default")])}var l=r(_,[["render",c]]);export{l as default};

@@ -1,0 +1,124 @@
+
+*{
+    margin: 0px;
+    padding: opx;
+    box-sizing: border-box;
+}
+.out{
+    background-color:rgb(243 241 241 / 100%);
+    margin: 60px auto;
+    height: 600px;
+    width: 1000px;
+    padding: 5px;
+  
+}
+
+
+.outer{
+    height: 500px;
+    width: 900px;
+    /* background-color: rgb(7, 106, 193); */
+    margin:50px auto;
+    padding: 40px;
+    background-image: url(images/books-g14c0d5680_1920.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    border-radius: 26px;
+
+    
+}
+.inner{
+    box-sizing: border-box;
+    
+    height: 400px;
+    width: 250px;
+    /* background-color: rgba(198, 211, 206, 0.29); */
+    /* background-image: url(/images/books-g14c0d5680_1920.jpg); */
+    /* background-image: url(images/sixteen-miles-out-lfOfV4pF7TI-unsplash.jpg); */
+    margin: 10px auto;
+    padding: 15px;
+    box-shadow: 1px 1px 2px 2px ;
+    background-image: url(images/books-g14c0d5680_1920.jpg);
+
+}
+h3{
+    color: aliceblue;
+    text-align: center;
+    margin-top: 20px;
+}
+
+
+/* start icon in input tag */
+
+.in{
+    box-sizing: border-box;
+    height: 35px;
+    width: 100%;
+    background-color: white;
+    display: flex;
+    /* margin-left: 18px; */
+
+}
+.logo{
+    padding-left: 9px;
+    margin-top: 10px;
+}
+.inn{
+    border: none;
+    margin-left: 11px;
+} 
+
+
+h5{
+    color: aliceblue;
+    text-align: center;
+}
+
+a{
+    text-decoration: none;
+}
+.fp{
+    text-align: center;
+}
+
+
+
+
+.btn2{
+    height: 35px;
+    width: 100%;
+    background-color: rgb(90, 208, 251);
+    border: none;
+    color: rgb(236, 233, 233); 
+}
+.btn{
+    display: flex;
+    justify-content: space-evenly;
+}
+.fbbtn{
+    background-color: rgb(122, 122, 244);
+    height: 25px;
+    width: 40%;
+    color: rgba(255, 255, 255, 0.971);
+    border: none;
+}
+.instabtn{
+    background-color: rgb(236, 85, 135);
+    height: 25px;
+    width: 40%;
+    color: rgba(247, 235, 235, 0.971);
+    border: none
+}
+
+.dha{
+    rgba(247, 235, 235, 0.971);
+    font-size: 10px;
+    text-align: center;
+}
+input{
+    height: 35px;
+    width: 100%;
+    border: none;
+}
+
+

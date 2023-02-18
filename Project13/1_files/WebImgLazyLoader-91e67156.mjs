@@ -1,0 +1,1 @@
+import{_ as o,o as t,c as s,b as r,al as l}from"./bootstrap-5b74a21d.mjs";const d={props:{lazyLoad:{type:Boolean,default:!0}}},n=["loading"];function c(a,i,e,p,u,_){return t(),s("div",null,[r("img",l(a.$attrs,{loading:e.lazyLoad?"lazy":"auto",style:{display:"block",maxWidth:"100%",height:"auto"}}),null,16,n)])}var f=o(d,[["render",c]]);export{f as default};
