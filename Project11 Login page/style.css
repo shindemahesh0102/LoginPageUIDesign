@@ -1,0 +1,191 @@
+.outer{
+    box-sizing: border-box;
+    height: 700px;
+    width: 900px;
+    margin:60px auto;
+    background-image: url(/Images/p3.png);
+
+    background-size: contain;
+    background-repeat: no-repeat;
+    /* background-color: #f0281d; */
+    background-size: cover;
+    padding: 50px;
+    
+}
+.inner{
+    box-sizing: border-box;
+
+    display:flex;
+    height: 600px;
+    width: 700px;
+    background-color: rgba(111, 115, 114, 0.474);
+margin: auto;
+
+
+
+
+
+}
+
+.imgleft{
+    
+ 
+    width: 50%;
+    
+    background-image: url(/Images/p3.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+   
+
+
+    
+
+
+}
+
+.inner1{
+    position: relative;
+ 
+  margin-left: 50px;
+  margin-top: 300px;
+  text-align: center;
+
+    
+}
+h3{
+    color: white;
+}
+
+/* button work */
+
+.btn{
+    position:relative;
+    height: 30px;
+    width: 300px;
+    top: 69px;
+    right: -15px;
+    margin:auto;
+    border-radius: 25px;
+    text-align: center;
+    white-space: 10px
+    ;
+}
+.fbbtn {
+    background-color:#3B5998;
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+
+}
+.fa-facebook{
+      background:white ; 
+      -webkit-background-clip: text;
+      background-clip: text;
+         color: transparent;
+     -webkit-text-fill-color: transparent;
+}
+.gbtn{
+
+    position: relative;
+    background-color: red;
+   
+    width: 20px;
+    height: 20px;
+
+}
+.fa-google-plus{
+ 
+    background: white;
+    -webkit-background-clip: text;
+      background-clip: text;
+         color: transparent;
+     -webkit-text-fill-color: transparent;
+     
+
+ }
+ .tbtn{
+     background: #e5f0f6;
+     border-radius: 50%;
+     height: 20px;
+     width: 20px;
+  
+ }
+ .fa-twitter{
+    background-color: #1D9BF0;
+    -webkit-background-clip: text;
+    background-clip: text;
+         color: transparent;
+     -webkit-text-fill-color: transparent;
+    }
+
+
+
+.imgright{
+    width: 50%;
+    background-color: rgb(242, 246, 250);
+    padding-left: 50px;
+    
+
+}
+.button{
+    display: flex;
+    height: 21px;
+    width: 100px;
+    left: 100px;
+    margin: auto;
+    justify-content: space-evenly;
+    
+}
+.btn1{
+        height: 40px;
+        width: 100px;
+        border:none;
+        background-color: none;
+        background-color: aliceblue;
+        
+        
+}
+.btn2{
+
+    height: 40px;
+        width: 100px;
+        height: 40px;
+        width: 100px;
+        background-color:rgb(10, 186, 245);
+        border: none;
+        color: aliceblue;
+}
+
+
+
+
+button{
+    height: 30px;
+    width: 60%  ;     
+    background-color:rgb(48, 175, 225);
+    border: none;
+      border-radius: 10px;
+      
+
+}
+a:link{
+    text-decoration: none;
+}
+#b{
+    border-top: none;
+    border-left: none;
+    border-right: none;
+
+}
+
+p,.p6,h6{
+    color: #b8bcbe;
+}
+.signup{
+color:white;
+}
+input{
+    background-color: rgb(242, 246, 250);
+}
+
+
